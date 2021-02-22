@@ -12,6 +12,13 @@ body {
   font-family: "Helvetica", Arial, sans-serif;
 }
 
+.container {
+  margin: 0 auto;
+  max-width: 1192px;
+  padding: 0 20px;
+  margin-top: 110px;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -173,10 +180,6 @@ footer ul li a {
   align-items: center;
 }
 
-main {
-  height: 80%;
-}
-
 footer {
   background-color: #131313;
   width: 100%;
@@ -203,6 +206,97 @@ footer {
   text-align: center;
   padding: 2.4375rem;
   font-size: 0.875rem;
+}
+
+/* Latest funding */
+
+.fundig-header {
+  display: flex;
+  align-items: center;
+  color: #f42;
+  padding: 1rem 0;
+}
+
+.fundig-header div {
+  font: 700 1.75rem/1.75rem "Assistant", sans-serif;
+}
+
+.fundig-header div i {
+  margin-left: 0.4rem;
+}
+
+.fundig-header ul {
+  margin-left: auto;
+  display: flex;
+  font: 300 1rem/1rem "Helvetica", sans-serif;
+}
+
+.fundig-header ul li:not(:last-child)::after {
+  content: "|";
+  padding: 0.5rem;
+}
+
+.card {
+  width: 33%;
+  background-color: #f420110d;
+  margin: 1rem;
+}
+
+.card-top {
+  position: relative;
+}
+
+.card-logo img {
+  top: 12px;
+  left: 12px;
+  width: 3.5rem;
+  height: 3.5rem;
+  position: absolute;
+}
+
+.card .card-top div:first-child {
+  background-color: #f42;
+  font-size: 0.8rem;
+  padding: 0 0 0.4rem 5rem;
+  color: #fff;
+  width: 100%;
+}
+
+.card .card-top div:last-child {
+  background-color: #f420111d;
+  font-size: 0.8rem;
+  padding: 0.6rem 0 0.6rem 5rem;
+  color: #111;
+  width: 100%;
+}
+
+.card .card-top div:last-child p {
+  font-size: 0.8rem;
+  color: rgba(17, 17, 17, 0.55);
+  width: 100%;
+}
+
+.card .card-middle {
+  padding: 0.625rem;
+  font-size: 0.8125rem;
+  font-weight: 200;
+  border-bottom: 0.1rem solid #f420111d;
+}
+
+.card .card-middle i {
+  margin-right: 0.3rem;
+}
+
+.card .card-middle div {
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+
+.card .card-bottom {
+  padding: 0.625rem;
+  font-size: .8125rem;
+  line-height: 1.1rem;
+  font-weight: 300;
 }
 
 @media screen and (max-width: 600px) {
