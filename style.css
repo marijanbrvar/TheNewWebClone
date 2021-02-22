@@ -28,6 +28,10 @@ header {
   background-color: #fff;
 }
 
+footer ul li a {
+  color: #9f9f9f;
+}
+
 .banner a,
 p {
   color: #aaa;
@@ -67,17 +71,6 @@ footer ul {
   justify-content: center;
   align-items: center;
   margin: 0 0.5rem;
-}
-
-footer ul li a {
-  color: #9f9f9f;
-}
-
-.banner a,
-p {
-  color: #aaa;
-  font-size: 0.8rem;
-  font-weight: 700;
 }
 
 .footer-links-social li a {
@@ -288,6 +281,10 @@ footer {
   width: 100%;
 }
 
+.banner p {
+  float: right;
+}
+
 .card .card-top div:last-child {
   background-color: #f420111d;
   font-size: 0.8rem;
@@ -365,10 +362,6 @@ footer {
 .banner-main h1 {
   font-size: 3rem;
   line-height: 3.5rem;
-}
-
-.banner p {
-  float: right;
 }
 
 .banner-1 {
@@ -479,7 +472,6 @@ footer {
   .higlights {
     grid-template-areas: "banner-main" "banner-1" "banner-2";
   }
-  
 }
 
 @media screen and (min-width: 1192px) {
