@@ -8,24 +8,18 @@
 
 Additional description about the project and its features.
 
-## Built With
+## Building with Responsive Design Replica of the website The Next Web
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML
+- CSS
 
 ## Live Demo
 
 [Live Demo Link](https://livedemo.com)
 
-
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
+In this project, we will replicate the archived version of the website The Next Web. The main goal of the project is to apply responsive design techniques so that the website behaves differently depending on the size of the screen where the website is displayed.
 
 ### Prerequisites
 
@@ -39,21 +33,17 @@ To get a local copy up and running follow these simple example steps.
 
 ### Deployment
 
-
-
 ## Authors
 
-👤 **Author1**
+👤 **Shoira Toshpulatova**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
+- GitHub: [@githubhandle](https://github.com/shoirata)
 - LinkedIn: [LinkedIn](https://linkedin.com/linkedinhandle)
 
-👤 **Author2**
+👤 **Marijan Brvar**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/marijanbrvar)
+- LinkedIn: [LinkedIn](https://linkedin.com/mbrvar)
 
 ## 🤝 Contributing
 
