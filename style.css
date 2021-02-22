@@ -73,6 +73,13 @@ footer ul li a {
   color: #9f9f9f;
 }
 
+.banner a,
+p {
+  color: #aaa;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
 .footer-links-social li a {
   color: #fff;
 }
