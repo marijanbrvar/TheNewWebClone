@@ -15,6 +15,10 @@ body {
 header {
   display: flex;
   flex-direction: column;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff;
 }
 
 .top-nav {
@@ -135,6 +139,57 @@ form {
   display: flex;
   align-items: center;
 }
+
+main {
+  height: 80%;
+}
+
+footer {
+  background-color: #131313;
+  width: 100%;
+  color: #9f9f9f;
+  display: flex;
+  flex-direction: column;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+}
+
+footer ul li a {
+  color: #9f9f9f;
+}
+
+.footer-links-social {
+  margin: 0 0 1.75rem 0;
+}
+
+.footer-links {
+  padding: 2.652rem 0 1.75rem 0;
+}
+
+.footer-links-social li a {
+  padding: 2.3rem 0.2rem;
+}
+
+.footer-links-menu li {
+  margin: 0 0.375rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+}
+
+.footer-links-menu li a:hover {
+  color: #fff;
+}
+
+.footer-legal {
+  background-color: #000000;
+  text-align: center;
+  padding: 2.4375rem;
+  font-size: 0.875rem;
+}
+
 @media screen and (max-width: 600px) {
   .top-nav {
     display: none;
