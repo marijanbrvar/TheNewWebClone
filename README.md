@@ -45,9 +45,8 @@ In this project, we will replicate the archived version of the website The Next 
 - GitHub: [@githubhandle](https://github.com/marijanbrvar)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/mbrvar)
 
-<a href="https://github.com/anuraghazra/github-readme-stats">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=marijanbrvar&repo=github-readme-stats" />
-</a>
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=marijanbrvar&count_private=true)
+
 
 ## 🤝 Contributing
 
