@@ -28,6 +28,13 @@ header {
   background-color: #fff;
 }
 
+.banner a,
+p {
+  color: #aaa;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
 .top-nav {
   display: flex;
   justify-content: space-between;
@@ -306,7 +313,115 @@ footer {
   font-weight: 300;
 }
 
-@media screen and (max-width: 600px) {
+.higlights {
+  display: grid;
+  grid-gap: 0.8rem;
+  grid-template-areas: "banner-main banner-main banner-1" " banner-main banner-main banner-2";
+  color: #fff;
+}
+
+.banner-main {
+  grid-area: banner-main;
+  height: 400px;
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(40, 44, 71, 0.52),
+      rgba(20, 14, 19, 0.73)
+    ),
+    url(https://inventionland.com/wp-content/uploads/2019/04/Inventionland-iPhone-with-apps.jpg)
+      no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: block;
+}
+
+.banner {
+  display: flex;
+  padding: 1rem;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+}
+
+.banner h1 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  line-height: 2rem;
+  padding-bottom: 1rem;
+}
+
+.banner-main h1 {
+  font-size: 3rem;
+  line-height: 3.5rem;
+}
+
+.banner p {
+  float: right;
+}
+
+.banner-1 {
+  grid-area: banner-1;
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(40, 44, 71, 0.52),
+      rgba(20, 14, 19, 0.73)
+    ),
+    url(https://home.sophos.com/en-us/medialibrary/Microsites/Home/SecurityCenter/ai-article-pic10.jpg)
+      no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.banner-2 {
+  grid-area: banner-2;
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(40, 44, 71, 0.52),
+      rgba(20, 14, 19, 0.73)
+    ),
+    url(https://cnet2.cbsistatic.com/img/IBsOTtgG8yow7n7ZK8Wppcxm84s=/1200x675/2020/02/11/6796988a-9879-4734-bca6-448b788f8de7/apple-app-store-icon.jpg)
+      no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (max-width: 1020px) {
+  .banner h1 {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+
+  .banner-main h1 {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+
+  .banner a,
+  p {
+    font-size: 0.7rem;
+  }
+
+  .banner-main {
+    height: 300px;
+  }
+
+  .banner-1 {
+    height: 143px;
+  }
+
+  .banner-2 {
+    height: 144px;
+  }
+}
+
+@media screen and (max-width: 762px) {
   .top-nav {
     display: none;
   }
@@ -344,6 +459,20 @@ footer {
     font-size: 0.7rem;
     font-weight: 500;
   }
+
+  .banner {
+    height: 150px;
+  }
+
+  .banner h1 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+
+  .higlights {
+    grid-template-areas: "banner-main" "banner-1" "banner-2";
+  }
+  
 }
 
 @media screen and (min-width: 1192px) {
