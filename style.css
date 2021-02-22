@@ -251,9 +251,15 @@ footer {
   padding: 0.5rem;
 }
 
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .card {
   background-color: #f420110d;
-  margin: 1rem 0.625rem;
+  margin: 1rem auto;
+  max-width: 24%;
 }
 
 .card-top {
@@ -392,7 +398,7 @@ footer {
   background-position: center;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1192px) {
   .banner h1 {
     font-size: 1rem;
     line-height: 1.2rem;
@@ -419,9 +425,18 @@ footer {
   .banner-2 {
     height: 144px;
   }
+
+
+  .columns {
+    display: flex;
+  }
+
+  .card {
+    max-width: 30%;
+  }
 }
 
-@media screen and (max-width: 762px) {
+@media screen and (max-width: 980px) {
   .top-nav {
     display: none;
   }
@@ -472,14 +487,12 @@ footer {
   .higlights {
     grid-template-areas: "banner-main" "banner-1" "banner-2";
   }
-}
-
-@media screen and (min-width: 1192px) {
   .columns {
     display: flex;
+    flex-wrap: wrap;
+  }
+  .card {
+    min-width: 100%;
   }
 
-  .card {
-    min-width: 22%;
-  }
 }
