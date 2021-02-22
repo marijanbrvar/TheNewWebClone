@@ -51,9 +51,9 @@ header {
   display: flex;
   justify-content: space-between;
   background: #ffffff;
-  max-height: 2.5rem;
+  min-height: 2.625rem;
   font: 400 0.8rem/0.8rem "Assistant", sans-serif;
-  align-content: center;
+  align-items: center;
 }
 
 .middle-nav ul {
@@ -63,7 +63,6 @@ header {
 form {
   font-size: 0.9rem;
   line-height: 0.8rem;
-  padding-top: 1rem;
   padding-right: 0.8;
   margin: 0 0.5rem;
   line-height: 1.3125rem;
@@ -78,4 +77,15 @@ form {
 
 .middle-nav ul li a {
   color: #aaa;
+}
+
+.fa-search {
+  color: #aaa;
+  transform: scale(-1, 1);
+}
+
+.search-btn {
+  height: 2.2625rem;
+  width: 2.2625rem;
+  border-left: 1px solid #aaa;
 }
