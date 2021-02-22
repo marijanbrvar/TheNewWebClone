@@ -39,6 +39,7 @@ In this project, we will replicate the archived version of the website The Next 
 
 - GitHub: [@githubhandle](https://github.com/shoirata)
 - LinkedIn: [LinkedIn](https://linkedin.com/linkedinhandle)
+
 ![Shoira's GitHub stats](https://github-readme-stats.vercel.app/api?username=shoirata&count_private=true)
 
 👤 **Marijan Brvar**
