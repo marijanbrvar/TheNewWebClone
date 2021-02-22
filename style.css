@@ -40,6 +40,12 @@ footer ul {
   justify-content: center;
 }
 
+.fundig-header ul {
+  margin-left: auto;
+  display: flex;
+  font: 300 1rem/1rem "Helvetica", sans-serif;
+}
+
 .top-nav ul {
   display: flex;
 }
@@ -83,6 +89,10 @@ footer ul li a {
 
 .middle-nav ul li a {
   color: #aaa;
+}
+
+.fundig-header ul li a {
+  color: #f42;
 }
 
 .footer-links-menu li a:hover {
@@ -225,10 +235,8 @@ footer {
   margin-left: 0.4rem;
 }
 
-.fundig-header ul {
-  margin-left: auto;
-  display: flex;
-  font: 300 1rem/1rem "Helvetica", sans-serif;
+.fundig-header ul li a:hover {
+  color: #111;
 }
 
 .fundig-header ul li:not(:last-child)::after {
@@ -237,9 +245,8 @@ footer {
 }
 
 .card {
-  width: 33%;
   background-color: #f420110d;
-  margin: 1rem;
+  margin: 1rem 0.625rem;
 }
 
 .card-top {
@@ -252,6 +259,11 @@ footer {
   width: 3.5rem;
   height: 3.5rem;
   position: absolute;
+}
+
+.card .card-middle div {
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
 }
 
 .card .card-top div:first-child {
@@ -287,14 +299,9 @@ footer {
   margin-right: 0.3rem;
 }
 
-.card .card-middle div {
-  padding-top: 0.3rem;
-  padding-bottom: 0.3rem;
-}
-
 .card .card-bottom {
   padding: 0.625rem;
-  font-size: .8125rem;
+  font-size: 0.8125rem;
   line-height: 1.1rem;
   font-weight: 300;
 }
@@ -336,5 +343,15 @@ footer {
     margin: 0 0.375rem;
     font-size: 0.7rem;
     font-weight: 500;
+  }
+}
+
+@media screen and (min-width: 1192px) {
+  .columns {
+    display: flex;
+  }
+
+  .card {
+    min-width: 22%;
   }
 }
