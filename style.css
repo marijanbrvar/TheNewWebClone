@@ -26,6 +26,7 @@ header {
   top: 0;
   width: 100%;
   background-color: #fff;
+  z-index: 10;
 }
 
 footer ul li a {
@@ -229,6 +230,7 @@ footer {
 
 .fundig-header {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   color: #f42;
   padding: 1rem 0;
@@ -291,12 +293,24 @@ footer {
   float: right;
 }
 
+.text-big p {
+  position: absolute;
+  right: 10px;
+}
+
 .card .card-top div:last-child {
   background-color: #f420111d;
   font-size: 0.8rem;
   padding: 0.6rem 0 0.6rem 5rem;
   color: #111;
   width: 100%;
+}
+
+.card .card-bottom p {
+  padding: 0.625rem;
+  font-size: 0.8125rem;
+  line-height: 1.1rem;
+  font-weight: 200;
 }
 
 .card .card-top div:last-child p {
@@ -314,13 +328,6 @@ footer {
 
 .card .card-middle i {
   margin-right: 0.3rem;
-}
-
-.card .card-bottom {
-  padding: 0.625rem;
-  font-size: 0.8125rem;
-  line-height: 1.1rem;
-  font-weight: 300;
 }
 
 .higlights {
@@ -354,6 +361,15 @@ footer {
 }
 
 .text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-big {
+  position: relative;
+  height: 100%;
+  justify-content: space-between;
   display: flex;
   flex-direction: column;
 }
@@ -426,13 +442,16 @@ footer {
     height: 144px;
   }
 
-
   .columns {
     display: flex;
   }
 
   .card {
     max-width: 30%;
+  }
+
+  .card:last-child {
+    display: none;
   }
 }
 
@@ -487,12 +506,46 @@ footer {
   .higlights {
     grid-template-areas: "banner-main" "banner-1" "banner-2";
   }
+
   .columns {
     display: flex;
     flex-wrap: wrap;
   }
+
   .card {
     min-width: 100%;
   }
 
+  .card:last-child {
+    display: block;
+  }
+
+  .text-big {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .text-big p {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+  }
+
+  .big-screen-logo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .fundig-header ul {
+    display: flex;
+    margin: 0;
+    font: 300 0.8rem/1rem "Helvetica", sans-serif;
+  }
+
+  .fundig-header div {
+    font: 700 1.3rem/1rem "Helvetica", sans-serif;
+    margin: 1rem 0 1rem 0;
+  }
 }
