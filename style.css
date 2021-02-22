@@ -104,10 +104,10 @@ footer ul li a {
   padding-left: 0.8rem;
 }
 
-.middle-nav ul li,
-form {
+.middle-nav ul li {
   font-size: 0.9rem;
   line-height: 1.3125rem;
+  padding-left: 0.5rem;
 }
 
 .middle-nav form input[type="text"] {
