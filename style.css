@@ -73,12 +73,38 @@ form {
   display: none;
 }
 
+.search {
+  display: flex;
+}
+
 .middle-nav ul li a {
   color: #aaa;
 }
 
-.bar-btn {
+.brand {
   display: none;
+  background-color: #111111;
+  flex: 0 1 auto;
+  padding: 0.75rem;
+  height: 2.625rem;
+}
+
+.brand img {
+  width: 100%;
+  max-width: 4.125rem;
+}
+
+.bar-btn {
+  outline: none;
+  display: none;
+  height: 2.625rem42px;
+  padding: 0.75rem;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.bar-btn:active {
+  color: #535353;
 }
 
 .fa-search {
@@ -109,7 +135,7 @@ form {
   display: flex;
   align-items: center;
 }
-@media (min-width: 320px) and (max-width: 992px) {
+@media screen and (max-width: 600px) {
   .top-nav {
     display: none;
   }
@@ -118,5 +144,19 @@ form {
   }
   .bar-btn {
     display: inline-block;
+  }
+
+  .middle-nav {
+    padding-left: 0;
+  }
+
+  .brand {
+    display: inline-block;
+  }
+  .bottom-nav {
+    height: 42px
+  }
+  .search-btn {
+    border-right: 1px solid #aaa;
   }
 } ;
