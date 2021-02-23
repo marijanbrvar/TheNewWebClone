@@ -1,10 +1,12 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Responsive Design
 
-> One paragraph statement about the project.
+We replicate the archived version of the website The Next Web. The main goal of the project is to apply responsive design with Media queries
 
-![screenshot](./app_screenshot.png)
+![screenshot](./SmallScreen.png)
+![screenshot](./MediumScreen.png)
+![screenshot](./Largescreen.png)
 
 Additional description about the project and its features.
 
@@ -22,16 +24,8 @@ Additional description about the project and its features.
 In this project, we will replicate the archived version of the website The Next Web. The main goal of the project is to apply responsive design techniques so that the website behaves differently depending on the size of the screen where the website is displayed.
 
 ### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
+- Microverse Project Template
+- Lint for CSS and HTML
 
 ## Authors
 
@@ -49,16 +43,6 @@ In this project, we will replicate the archived version of the website The Next 
 
 ![Marijan's GitHub stats](https://github-readme-stats.vercel.app/api?username=marijanbrvar&count_private=true)
 
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](issues/).
-
-## Show your support
-
-Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
