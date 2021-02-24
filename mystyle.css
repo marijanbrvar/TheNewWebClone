@@ -1,5 +1,4 @@
 
-
 .card-news-image {
   border: 1px solid magenta;
   height: 150px;
@@ -8,6 +7,6 @@
 
 .card-news-image-img {
   width: 100%;
-  height: 100%; 
+  height: 100%;
   object-fit: cover;
 }
