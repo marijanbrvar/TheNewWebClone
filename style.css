@@ -15,6 +15,10 @@ body {
   justify-content: space-between;
 }
 
+img {
+  width: 100%;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1192px;
@@ -343,8 +347,7 @@ footer {
 .banner-main {
   grid-area: banner-main;
   height: 400px;
-  background:
-    linear-gradient(
+  background: linear-gradient(
       to bottom,
       rgba(40, 44, 71, 0.52),
       rgba(20, 14, 19, 0.73)
@@ -391,8 +394,7 @@ footer {
 
 .banner-1 {
   grid-area: banner-1;
-  background:
-    linear-gradient(
+  background: linear-gradient(
       to bottom,
       rgba(40, 44, 71, 0.52),
       rgba(20, 14, 19, 0.73)
@@ -405,8 +407,7 @@ footer {
 
 .banner-2 {
   grid-area: banner-2;
-  background:
-    linear-gradient(
+  background: linear-gradient(
       to bottom,
       rgba(40, 44, 71, 0.52),
       rgba(20, 14, 19, 0.73)
@@ -415,6 +416,104 @@ footer {
       no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.cat-card a {
+  color: inherit;
+}
+
+.cat-card {
+  width: 33%;
+  margin-left: 1rem;
+}
+
+.cat-card-top {
+  background: linear-gradient(
+      to bottom,
+      rgba(40, 44, 71, 0.52),
+      rgba(20, 14, 19, 0.73)
+    ),
+    url("./img/game.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 280px;
+  height: 280px;
+  padding: 10px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.cat-card-top p {
+  font-size: 0.8rem;
+}
+
+.cat-card-top a {
+  font-size: 0.75rem;
+}
+
+.cat-card-top h3 a {
+  font-size: 1.3rem;
+}
+
+.cat-card-top p {
+  color: #fff;
+  padding-bottom: 0.3rem;
+}
+
+.cat-card-top p a {
+  color: #9f9f9f;
+}
+
+.cat-card-mid {
+  display: flex;
+  height: 96px;
+  background: #f420111d;
+  line-height: 1.3rem;
+}
+
+.cat-card-mid div:first-child {
+  padding: 1em;
+}
+
+.cat-card-mid a {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.cat-card-mid a,
+p {
+  color: #ff4422;
+}
+
+.cat-card-img {
+  width: 96px;
+  height: 96px;
+  flex: 1 1 auto;
+}
+
+.cat-card-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.cat-card-bottom ul li::before {
+  content: "\2022";
+  color: #ff4422;
+  display: inline-block;
+  width: 1em;
+  margin-left: 1em;
+}
+
+.cat-card-bottom ul li {
+  border-bottom: 1px solid rgba(134, 134, 134, 0.438);
+  height: 3rem;
+  font-size: 1rem;
+  padding: 0.3rem;
+  color: #333;
 }
 
 @media screen and (max-width: 1192px) {
