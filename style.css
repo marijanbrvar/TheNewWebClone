@@ -265,6 +265,7 @@ footer {
 .columns {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .card {
@@ -507,8 +508,11 @@ footer {
 }
 
 .cat-card {
-  width: 33%;
   margin-left: 1rem;
+}
+
+.categories {
+  max-width: 33%;
 }
 
 .cat-card-top {
@@ -528,6 +532,8 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  max-height: 280px;
+  height: 280px;
 }
 
 .apple-bg-img {
@@ -537,6 +543,8 @@ footer {
       rgba(20, 14, 19, 0.73)
     ),
     url("./img/MacBook-USB-C-Feat-Img-730x365.jpg");
+  max-height: 280px;
+  height: 280px;
 }
 
 .google-bg-img {
@@ -546,6 +554,8 @@ footer {
       rgba(20, 14, 19, 0.73)
     ),
     url("./img/Snag_3c8ecdc-368x276.webp");
+  max-height: 280px;
+  height: 280px;
 }
 
 .cat-card-top p {
