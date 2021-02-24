@@ -507,12 +507,8 @@ footer {
   color: inherit;
 }
 
-.cat-card {
-  margin-left: 1rem;
-}
-
 .categories {
-  max-width: 33%;
+  max-width: 31%;
 }
 
 .cat-card-top {
@@ -591,7 +587,7 @@ footer {
 }
 
 .cat-card-mid div:first-child {
-  padding: 1em;
+  padding: 0.5em;
   flex: 1 1 auto;
 }
 
@@ -603,7 +599,6 @@ footer {
 
 .cat-card-mid a {
   font-weight: 700;
-  font-size: 1rem;
 }
 
 .cat-card-img {
