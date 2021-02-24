@@ -5,7 +5,6 @@
   text-decoration: none;
   box-sizing: border-box;
 }
-
 html,
 body {
   height: 100%;
@@ -155,7 +154,6 @@ footer ul {
 }
 
 .brand img {
-  width: 100%;
   max-width: 4.125rem;
 }
 
@@ -262,9 +260,12 @@ footer {
 }
 
 .card {
-  background-color: #f420110d;
   margin: 1rem auto;
   max-width: 24%;
+}
+
+.card-bg {
+  background-color: #f420110d;
 }
 
 .card-top {
@@ -343,8 +344,7 @@ footer {
 .banner-main {
   grid-area: banner-main;
   height: 400px;
-  background:
-    linear-gradient(
+  background: linear-gradient(
       to bottom,
       rgba(40, 44, 71, 0.52),
       rgba(20, 14, 19, 0.73)
@@ -391,8 +391,7 @@ footer {
 
 .banner-1 {
   grid-area: banner-1;
-  background:
-    linear-gradient(
+  background: linear-gradient(
       to bottom,
       rgba(40, 44, 71, 0.52),
       rgba(20, 14, 19, 0.73)
@@ -405,8 +404,7 @@ footer {
 
 .banner-2 {
   grid-area: banner-2;
-  background:
-    linear-gradient(
+  background: linear-gradient(
       to bottom,
       rgba(40, 44, 71, 0.52),
       rgba(20, 14, 19, 0.73)
@@ -417,6 +415,84 @@ footer {
   background-position: center;
 }
 
+.latest .columns {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card-news {
+  display: flex;
+  align-content: flex-start;
+  margin-bottom: 1em;
+  flex-wrap: wrap;
+  width: 24%;
+}
+
+.card-news a {
+  color: inherit;
+}
+
+.card-news-image {
+  position: relative;
+  max-height: 130px;
+  margin-bottom: 0.5em;
+}
+
+.large {
+  max-height: 200px;
+}
+.dealDiscount {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  top: 0px;
+  right: 0px;
+  background-image: url("./img/deals-ribbon.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.dealDiscount div {
+  transform: rotate(45deg);
+  font-size: 14px;
+  font-weight: 700;
+  left: 8px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  top: 20px;
+  width: 100%;
+}
+
+.oldprice {
+  text-decoration: line-through;
+  font-size: 13px;
+}
+
+.newprice{
+  font-size: 1rem;
+  font-weight: 500;
+  color: #111;
+}
+
+.card-news-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-news-body {
+  padding: .3em;
+}
+
+.card-news-body h4 {
+  margin-bottom: 0.3em;
+  font-weight: 700;
+}
+
+/* Media queries for large 1192px medium 980px and small 740 */
 @media screen and (max-width: 1192px) {
   .banner h1 {
     font-size: 1rem;
@@ -538,9 +614,23 @@ footer {
   .big-screen-logo {
     display: none;
   }
+
+  .latest .columns::after {
+    content: "";
+    flex: auto;
+  }
+
+  .card-news {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+    width: 32%;
+    margin: 0.3em;
+  }
+
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (min-width: 300px) and (max-width: 740px) {
   .fundig-header ul {
     display: flex;
     margin: 0;
@@ -550,5 +640,41 @@ footer {
   .fundig-header div {
     font: 700 1.3rem/1rem "Helvetica", sans-serif;
     margin: 1rem 0 1rem 0;
+  }
+
+  .latest .columns {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-news {
+    display: flex;
+    align-content: flex-start;
+    margin-bottom: 1em;
+    flex-wrap:nowrap;
+    width:95%;
+  }
+
+  .card-news-image {
+    flex: 0 0 auto;
+    margin-right: 1rem;
+    width: 75px;
+    height: 75px;
+  }
+
+  .card-news-image img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+  }
+
+  .dealDiscount {
+    display: none;
+  }
+
+  .details {
+    margin-left: auto!important;
   }
 }
