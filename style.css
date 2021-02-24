@@ -39,6 +39,10 @@ footer ul li a {
   color: #9f9f9f;
 }
 
+.big-screen-logo img {
+  width: 25em;
+}
+
 .banner a,
 p {
   color: #aaa;
@@ -475,7 +479,7 @@ footer {
   font-size: 13px;
 }
 
-.newprice{
+.newprice {
   font-size: 1rem;
   font-weight: 500;
   color: #111;
@@ -488,7 +492,7 @@ footer {
 }
 
 .card-news-body {
-  padding: .3em;
+  padding: 0.3em;
 }
 
 .card-news-body h4 {
@@ -562,18 +566,13 @@ footer {
 }
 
 .cat-card-mid div:first-child p {
-  font-size: .75rem;
+  font-size: 0.75rem;
   font-weight: 400;
 }
 
 .cat-card-mid a {
   font-weight: 700;
   font-size: 1rem;
-}
-
-.cat-card-mid a,
-p {
-  color: #ff4422;
 }
 
 .cat-card-img {
@@ -589,7 +588,6 @@ p {
   object-fit: cover;
 }
 
-
 .cat-card-bottom li::marker {
   color: #ff4422;
 }
@@ -603,7 +601,6 @@ p {
   text-indent: -1.3em;
   padding-left: 1.5em;
 }
-
 
 @media screen and (max-width: 1192px) {
   .banner h1 {
@@ -739,7 +736,6 @@ p {
     width: 32%;
     margin: 0.3em;
   }
-
 }
 
 @media screen and (min-width: 300px) and (max-width: 740px) {
@@ -765,8 +761,8 @@ p {
     display: flex;
     align-content: flex-start;
     margin-bottom: 1em;
-    flex-wrap:nowrap;
-    width:95%;
+    flex-wrap: nowrap;
+    width: 95%;
   }
 
   .card-news-image {
@@ -779,7 +775,7 @@ p {
   .card-news-image img {
     width: 100%;
     height: 100%;
-    object-fit:cover;
+    object-fit: cover;
   }
 
   .dealDiscount {
@@ -787,6 +783,6 @@ p {
   }
 
   .details {
-    margin-left: auto!important;
+    margin-left: auto !important;
   }
 }
