@@ -18,7 +18,9 @@ body {
 img {
   width: 100%;
 }
-
+.funding-header > a {
+  color: inherit;
+}
 .spacer-lg {
   margin-top: 10rem !important;
 }
@@ -75,7 +77,7 @@ footer ul {
   justify-content: center;
 }
 
-.fundig-header ul {
+.funding-header ul {
   margin-left: auto;
   display: flex;
   font: 300 1rem/1rem Helvetica, sans-serif;
@@ -146,7 +148,7 @@ footer ul {
   color: #aaa;
 }
 
-.fundig-header ul li a {
+.funding-header ul li a {
   color: #f42;
 }
 
@@ -284,7 +286,8 @@ footer {
 }
 
 /* Latest funding */
-.fundig-header {
+.funding-header {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -292,19 +295,19 @@ footer {
   padding: 1rem 0;
 }
 
-.fundig-header div {
+.funding-header div {
   font: 700 1.75rem/1.75rem Assistant, sans-serif;
 }
 
-.fundig-header div i {
+.funding-header div i {
   margin-left: 0.4rem;
 }
 
-.fundig-header ul li a:hover {
+.funding-header ul li a:hover {
   color: #111;
 }
 
-.fundig-header ul li:not(:last-child)::after {
+.funding-header ul li:not(:last-child)::after {
   content: "|";
   padding: 0.5rem;
 }
@@ -494,7 +497,7 @@ footer {
   align-content: flex-start;
   margin-bottom: 1em;
   flex-wrap: wrap;
-  width: 30%;
+  width: 24%;
 }
 
 .card-news-image {
@@ -736,13 +739,13 @@ footer {
 }
 
 @media screen and (min-width: 300px) and (max-width: 740px) {
-  .fundig-header ul {
+  .funding-header ul {
     display: flex;
     margin: 0;
     font: 300 0.8rem/1rem Helvetica, sans-serif;
   }
 
-  .fundig-header div {
+  .funding-header div {
     font: 700 1.3rem/1rem Helvetica, sans-serif;
     margin: 1rem 0;
   }
