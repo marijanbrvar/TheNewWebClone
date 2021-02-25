@@ -18,9 +18,15 @@ body {
 img {
   width: 100%;
 }
+
+footer ul li a {
+  color: #9f9f9f;
+}
+
 .funding-header > a {
   color: inherit;
 }
+
 .spacer-lg {
   margin-top: 10rem !important;
 }
@@ -48,10 +54,6 @@ header {
   width: 100%;
   background-color: #fff;
   z-index: 10;
-}
-
-footer ul li a {
-  color: #9f9f9f;
 }
 
 .big-screen-logo img {
@@ -113,6 +115,10 @@ footer ul {
 
 .cat-card-mid a {
   font-weight: 700;
+}
+
+.footer-nav a {
+  padding: 0 0.5em;
 }
 
 .footer-links-social li a {
@@ -283,6 +289,10 @@ footer {
   text-align: center;
   padding: 2.4375rem;
   font-size: 0.875rem;
+}
+
+.footer-legal img {
+  width: 60px;
 }
 
 /* Latest funding */
