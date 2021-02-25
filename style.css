@@ -15,6 +15,30 @@ body {
   justify-content: space-between;
 }
 
+img {
+  width: 100%;
+}
+
+footer ul li a {
+  color: #9f9f9f;
+}
+
+.funding-header > a {
+  color: inherit;
+}
+
+.spacer-lg {
+  margin-top: 10rem !important;
+}
+
+.spacer-sm {
+  margin-top: 5rem !important;
+}
+
+.spacer-bottom {
+  margin-bottom: 10rem !important;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1192px;
@@ -32,8 +56,8 @@ header {
   z-index: 10;
 }
 
-footer ul li a {
-  color: #9f9f9f;
+.big-screen-logo img {
+  width: 25em;
 }
 
 .banner a,
@@ -55,10 +79,10 @@ footer ul {
   justify-content: center;
 }
 
-.fundig-header ul {
+.funding-header ul {
   margin-left: auto;
   display: flex;
-  font: 300 1rem/1rem "Helvetica", sans-serif;
+  font: 300 1rem/1rem Helvetica, sans-serif;
 }
 
 .top-nav ul {
@@ -75,6 +99,26 @@ footer ul {
   justify-content: center;
   align-items: center;
   margin: 0 0.5rem;
+}
+
+.card-news a {
+  color: inherit;
+}
+
+.cat-card a {
+  color: inherit;
+}
+
+.cat-card-top a {
+  font-size: 0.75rem;
+}
+
+.cat-card-mid a {
+  font-weight: 700;
+}
+
+.footer-nav a {
+  padding: 0 0.5em;
 }
 
 .footer-links-social li a {
@@ -94,6 +138,14 @@ footer ul {
   padding: 0;
 }
 
+.cat-card-top h3 a {
+  font-size: 1.4rem;
+}
+
+.cat-card-top p a {
+  color: #9f9f9f;
+}
+
 .top-nav ul li a {
   color: #ffffffa2;
 }
@@ -102,7 +154,7 @@ footer ul {
   color: #aaa;
 }
 
-.fundig-header ul li a {
+.funding-header ul li a {
   color: #f42;
 }
 
@@ -127,7 +179,7 @@ footer ul {
   justify-content: space-between;
   background: #fff;
   min-height: 2.625rem;
-  font: 400 0.8rem/0.8rem "Assistant", sans-serif;
+  font: 400 0.8rem/0.8rem Assistant, sans-serif;
   align-items: center;
   padding-left: 0.8rem;
 }
@@ -155,7 +207,6 @@ footer ul {
 }
 
 .brand img {
-  width: 100%;
   max-width: 4.125rem;
 }
 
@@ -164,7 +215,7 @@ footer ul {
   display: none;
   height: 2.625rem;
   width: 2.625rem;
-  padding: 0.9rem 0.8rem 0.8rem 0.8rem;
+  padding: 0.9rem 0.8rem 0.8rem;
   color: #aaa;
   cursor: pointer;
 }
@@ -210,11 +261,22 @@ footer {
 }
 
 .footer-links-social {
-  margin: 0 0 1.75rem 0;
+  margin: 0 0 1.75rem;
 }
 
 .footer-links {
-  padding: 2.652rem 0 1.75rem 0;
+  padding: 2.652rem 0 1.75rem;
+}
+
+.cat-card-bottom ul li {
+  border-bottom: 1px solid rgba(134, 134, 134, 0.438);
+  font-size: 0.9rem;
+  color: #333a;
+  padding: 0.6rem 0.2rem;
+  list-style-type: disc;
+  list-style-position: inside;
+  text-indent: -1.3em;
+  padding-left: 1.5em;
 }
 
 .footer-links-social li:hover {
@@ -229,9 +291,13 @@ footer {
   font-size: 0.875rem;
 }
 
-/* Latest funding */
+.footer-legal img {
+  width: 60px;
+}
 
-.fundig-header {
+/* Latest funding */
+.funding-header {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -239,19 +305,19 @@ footer {
   padding: 1rem 0;
 }
 
-.fundig-header div {
-  font: 700 1.75rem/1.75rem "Assistant", sans-serif;
+.funding-header div {
+  font: 700 1.75rem/1.75rem Assistant, sans-serif;
 }
 
-.fundig-header div i {
+.funding-header div i {
   margin-left: 0.4rem;
 }
 
-.fundig-header ul li a:hover {
+.funding-header ul li a:hover {
   color: #111;
 }
 
-.fundig-header ul li:not(:last-child)::after {
+.funding-header ul li:not(:last-child)::after {
   content: "|";
   padding: 0.5rem;
 }
@@ -259,12 +325,15 @@ footer {
 .columns {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .card {
-  background-color: #f420110d;
-  margin: 1rem auto;
   max-width: 24%;
+}
+
+.card-bg {
+  background-color: #f420110d;
 }
 
 .card-top {
@@ -279,9 +348,54 @@ footer {
   position: absolute;
 }
 
+.dealDiscount div {
+  transform: rotate(45deg);
+  font-size: 14px;
+  font-weight: 700;
+  left: 8px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  top: 20px;
+  width: 100%;
+}
+
 .card .card-middle div {
   padding-top: 0.3rem;
   padding-bottom: 0.3rem;
+}
+
+.banner p {
+  float: right;
+}
+
+.cat-card-top p {
+  color: #fff;
+  padding-bottom: 0.3rem;
+  font-size: 0.8rem;
+}
+
+.text-big p {
+  position: absolute;
+  right: 10px;
+}
+
+.card .card-bottom p {
+  padding: 0.625rem;
+  font-size: 0.8125rem;
+  line-height: 1.1rem;
+  font-weight: 200;
+}
+
+.cat-card-mid div:first-child {
+  padding: 0.5em;
+  flex: 1 1 auto;
+}
+
+.cat-card-mid div:first-child p {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #f42;
 }
 
 .card .card-top div:first-child {
@@ -292,28 +406,12 @@ footer {
   width: 100%;
 }
 
-.banner p {
-  float: right;
-}
-
-.text-big p {
-  position: absolute;
-  right: 10px;
-}
-
 .card .card-top div:last-child {
   background-color: #f420111d;
   font-size: 0.8rem;
   padding: 0.6rem 0 0.6rem 5rem;
   color: #111;
   width: 100%;
-}
-
-.card .card-bottom p {
-  padding: 0.625rem;
-  font-size: 0.8125rem;
-  line-height: 1.1rem;
-  font-weight: 200;
 }
 
 .card .card-top div:last-child p {
@@ -343,14 +441,7 @@ footer {
 .banner-main {
   grid-area: banner-main;
   height: 400px;
-  background:
-    linear-gradient(
-      to bottom,
-      rgba(40, 44, 71, 0.52),
-      rgba(20, 14, 19, 0.73)
-    ),
-    url(https://inventionland.com/wp-content/uploads/2019/04/Inventionland-iPhone-with-apps.jpg)
-      no-repeat;
+  background: linear-gradient(to bottom, rgba(40, 44, 71, 0.52), rgba(20, 14, 19, 0.73)), url(https://inventionland.com/wp-content/uploads/2019/04/Inventionland-iPhone-with-apps.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   display: block;
@@ -391,30 +482,138 @@ footer {
 
 .banner-1 {
   grid-area: banner-1;
-  background:
-    linear-gradient(
-      to bottom,
-      rgba(40, 44, 71, 0.52),
-      rgba(20, 14, 19, 0.73)
-    ),
-    url(https://home.sophos.com/en-us/medialibrary/Microsites/Home/SecurityCenter/ai-article-pic10.jpg)
-      no-repeat;
+  background: linear-gradient(to bottom, rgba(40, 44, 71, 0.52), rgba(20, 14, 19, 0.73)), url(https://home.sophos.com/en-us/medialibrary/Microsites/Home/SecurityCenter/ai-article-pic10.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .banner-2 {
   grid-area: banner-2;
-  background:
-    linear-gradient(
-      to bottom,
-      rgba(40, 44, 71, 0.52),
-      rgba(20, 14, 19, 0.73)
-    ),
-    url(https://cnet2.cbsistatic.com/img/IBsOTtgG8yow7n7ZK8Wppcxm84s=/1200x675/2020/02/11/6796988a-9879-4734-bca6-448b788f8de7/apple-app-store-icon.jpg)
-      no-repeat;
+  background: linear-gradient(to bottom, rgba(40, 44, 71, 0.52), rgba(20, 14, 19, 0.73)), url(https://cnet2.cbsistatic.com/img/IBsOTtgG8yow7n7ZK8Wppcxm84s=/1200x675/2020/02/11/6796988a-9879-4734-bca6-448b788f8de7/apple-app-store-icon.jpg) no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.latest {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card-news {
+  display: flex;
+  align-content: flex-start;
+  margin-bottom: 1em;
+  flex-wrap: wrap;
+  width: 24%;
+}
+
+.card-news-image {
+  position: relative;
+  max-height: 130px;
+  margin-bottom: 0.5em;
+}
+
+.large {
+  max-height: 200px;
+}
+
+.dealDiscount {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  top: 0;
+  right: 0;
+  background-image: url(./img/deals-ribbon.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.oldprice {
+  text-decoration: line-through;
+  font-size: 13px;
+}
+
+.newprice {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #111;
+}
+
+.card-news-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-news-body {
+  padding: 0.3em;
+}
+
+.card-news-body h4 {
+  margin-bottom: 0.3em;
+  font-weight: 700;
+}
+
+.categories {
+  margin-top: 5rem;
+  max-width: 31%;
+}
+
+.cat-card-top {
+  background: linear-gradient(to bottom, rgba(40, 44, 71, 0.52), rgba(20, 14, 19, 0.73)), url(./img/game.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 280px;
+  height: 280px;
+  padding: 1em;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.apple-bg-img {
+  background: linear-gradient(to bottom, rgba(40, 44, 71, 0.52), rgba(20, 14, 19, 0.73)), url(./img/MacBook-USB-C-Feat-Img-730x365.jpg);
+  max-height: 280px;
+  height: 280px;
+}
+
+.google-bg-img {
+  background: linear-gradient(to bottom, rgba(40, 44, 71, 0.52), rgba(20, 14, 19, 0.73)), url(./img/Snag_3c8ecdc-368x276.webp);
+  max-height: 280px;
+  height: 280px;
+}
+
+.cat-card-top h3 {
+  padding-right: 5em;
+}
+
+.cat-card-mid {
+  display: flex;
+  background: #f420111d;
+  line-height: 1.3rem;
+  color: #f42;
+}
+
+.cat-card-img {
+  width: 96px;
+  height: 96px;
+  flex: 1 1 auto;
+}
+
+.cat-card-img img {
+  height: 100%;
+  width: 100%;
+  min-width: 96px;
+  object-fit: cover;
+}
+
+.cat-card-bottom li::marker {
+  color: #f42;
 }
 
 @media screen and (max-width: 1192px) {
@@ -447,14 +646,6 @@ footer {
 
   .columns {
     display: flex;
-  }
-
-  .card {
-    max-width: 30%;
-  }
-
-  .card:last-child {
-    display: none;
   }
 }
 
@@ -516,11 +707,11 @@ footer {
   }
 
   .card {
-    min-width: 100%;
+    max-width: 30%;
   }
 
   .card:last-child {
-    display: block;
+    display: none;
   }
 
   .text-big {
@@ -538,17 +729,83 @@ footer {
   .big-screen-logo {
     display: none;
   }
-}
 
-@media screen and (max-width: 740px) {
-  .fundig-header ul {
+  .card-news {
     display: flex;
-    margin: 0;
-    font: 300 0.8rem/1rem "Helvetica", sans-serif;
+    justify-content: space-between;
+    width: 32%;
+    margin: 0.3em 0.3em 1em 0.3em;
   }
 
-  .fundig-header div {
-    font: 700 1.3rem/1rem "Helvetica", sans-serif;
-    margin: 1rem 0 1rem 0;
+  .card-news:empty {
+    height: 0;
+    border: none;
+  }
+
+  .categories {
+    margin-top: 1rem;
+    max-width: 49%;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 740px) {
+  .funding-header ul {
+    display: flex;
+    margin: 0;
+    font: 300 0.8rem/1rem Helvetica, sans-serif;
+  }
+
+  .funding-header div {
+    font: 700 1.3rem/1rem Helvetica, sans-serif;
+    margin: 1rem 0;
+  }
+
+  .latest .columns {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-news {
+    display: flex;
+    align-content: flex-start;
+    margin-bottom: 1em;
+    flex-wrap: nowrap;
+    width: 95%;
+  }
+
+  .card-news-image {
+    flex: 0 0 auto;
+    margin-right: 1rem;
+    width: 75px;
+    height: 75px;
+  }
+
+  .card-news-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .dealDiscount {
+    display: none;
+  }
+
+  .details {
+    margin-left: auto !important;
+  }
+
+  .categories {
+    margin-top: 1rem;
+    max-width: 100%;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+
+  .card:last-child {
+    display: block;
   }
 }

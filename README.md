@@ -1,8 +1,9 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Responsive Design
+# Responsive Design Update on MIlestone 2
 
 We replicate the archived version of the website The Next Web. The main goal of the project is to apply responsive design with Media queries
+Added new content Categories, Latest news, and Latest deals supporting responisve behaviour for different devices.
 
 ![screenshot](./SmallScreen.png)
 ![screenshot](./MediumScreen.png)
@@ -17,7 +18,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://marijanbrvar.github.io/TheNewWebClone/) Updatetd version
 
 ## Getting Started
 
@@ -46,10 +47,5 @@ In this project, we will replicate the archived version of the website The Next 
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
+- Thanks to my coding partner and the team
 - Inspiration
-- etc
-
-## 📝 License
-
-This project is [MIT](lic.url) licensed.
