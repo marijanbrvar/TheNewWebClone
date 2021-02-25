@@ -47,10 +47,5 @@ In this project, we will replicate the archived version of the website The Next 
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
+- Thanks to my coding partner and the team
 - Inspiration
-- etc
-<!-- 
-## 📝 License
-
-This project is [MIT](lic.url) licensed. -->
