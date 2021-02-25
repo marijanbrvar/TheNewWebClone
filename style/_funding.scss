@@ -1,0 +1,61 @@
+.funding {
+  flex-wrap: wrap;
+
+  .funding-card {
+    width: 24%;
+    margin-bottom: 1em;
+
+    @media screen and (max-width: 940px) {
+      width: 32%;
+    }
+
+    @media screen and (max-width: 740px) {
+      width: 100%;
+    }
+
+    background: #f420110d;
+
+    .funding-card-middle {
+      padding: 0.625rem;
+      font-size: 0.8125rem;
+      font-weight: 200;
+      border-bottom: 0.1rem solid #f420111d;
+    }
+
+    .funding-card-bottom p {
+      font-size: 0.8rem;
+      color: #999;
+      padding: 0.5em;
+    }
+
+    .funding-card-top {
+      position: relative;
+
+      div:first-child {
+        background-color: #f42;
+        font-size: 0.8rem;
+        padding: 0 0 0.4rem 5rem;
+        color: #fff;
+        width: 100%;
+      }
+
+      div:last-child {
+        background-color: #f420111d;
+        font-size: 0.8rem;
+        padding: 0.6rem 0 0.6rem 5rem;
+        color: #111;
+        width: 100%;
+      }
+
+      .funding-card-logo {
+        img {
+          top: 12px;
+          left: 12px;
+          width: 3.5rem;
+          height: 3.5rem;
+          position: absolute;
+        }
+      }
+    }
+  }
+}

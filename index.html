@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;700&display=swap"
     rel="stylesheet" />
 
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./style/style.css" />
   <title>The New Web</title>
 </head>
 
@@ -55,12 +55,11 @@
       <div class="search" id="search">
         <form>
           <input type="text" placeholder="Search..." />
-          <div class="search-btn"><i class="fas fa-search fa-md"></i></div>
+          <div class="search-btn"><i class="fas fa-search fa-lg"></i></div>
         </form>
         <div class="bar-btn"><i class="fas fa-bars fa-lg"></i></div>
       </div>
     </div>
-
     <div class="bottom-nav">
       Calling young digital talent in the Netherlands – Berecognized in the
       T500
@@ -68,67 +67,82 @@
   </header>
   <main class="container">
     <section class="higlights">
-      <div class="banner banner-main">
-        <div class="text-big">
-          <div class="big-screen-logo">
-            <img src="./img/tnw.svg" width="200" alt="" />
+      <div class="featured">
+        <div class="banner">
+          <img src="./img/Inventionland-iPhone-with-apps.jpg" alt="Invention land">
+          <div class="content">
+            <div>
+              <div class="big-screen-logo">
+                <img src="./img/tnw.svg" alt="" />
+              </div>
+            </div>
+            <div>
+              <h1>
+                Opal cuts off your apps’ internet access to help you stop
+                doomscrolling
+              </h1>
+              <p>
+                by <a href="#"> Ivan Mehta </a><i class="far fa-clock"></i> 1 hour
+                ago <i class="fas fa-share-alt"></i>
+              </p>
+            </div>
           </div>
-          <h1>
-            Opal cuts off your apps’ internet access to help you stop
-            doomscrolling
-          </h1>
-          <p>
-            by <a href="#"> Ivan Mehta </a><i class="far fa-clock"></i> 1 hour
-            ago <i class="fas fa-share-alt"></i>
-          </p>
         </div>
       </div>
-      <div class="banner banner-1">
-        <div class="text">
-          <h1>Google unveils privacy-friendly AI cookie killer</h1>
-          <p>
-            by <a href="#">Thomas Macaulay </a><i class="far fa-clock"></i> 2
-            hours ago <i class="fas fa-share-alt"></i>
-          </p>
+      <div class="fitured-side">
+        <div class="banner h-48 mb-8">
+          <img src="./img/ai-article-pic10.jpg" alt="Invention land">
+          <div class="content">
+            <div></div>
+            <div>
+              <h1>Google unveils privacy-friendly AI cookie killer</h1>
+              <p>
+                by <a href="#">Thomas Macaulay </a><i class="far fa-clock"></i> 2
+                hours ago <i class="fas fa-share-alt"></i>
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="banner banner-2">
-        <div class="text">
-          <h1>This Mac app automatically detects your duplicate files</h1>
-          <p>
-            by <a href="#">Ivan Mehta </a><i class="far fa-clock"></i> 1 hour
-            ago <i class="fas fa-share-alt"></i>
-          </p>
+        <div class="banner h-48">
+          <img src="./img/apple-app-store-icon.webp" alt="Invention land">
+          <div class="content">
+            <div></div>
+            <div>
+              <h1>This Mac app automatically detects your duplicate files</h1>
+              <p>
+                by <a href="#">Ivan Mehta </a><i class="far fa-clock"></i> 1 hour
+                ago <i class="fas fa-share-alt"></i>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <section class="latest spacer-lg">
-      <div class="funding-header">
+    <section class="latest-news">
+      <div class="section-header">
         <a href="#">
           <h2>Latest news <i class="fas fa-chevron-right fa-sm"></i></h2>
         </a>
       </div>
       <div class="columns">
-        <div class="card-news col-md-3 col-lg-4">
-          <div class="card-news-image">
-            <a href="#"><img class="card-news-image-img"
-                src="./img/california-car-ev-hydrogen-future-electruc-fcev-ev-480x270.webp"
+        <div class="card">
+          <div class="card-image">
+            <a href="#"><img src="./img/california-car-ev-hydrogen-future-electruc-fcev-ev-480x270.webp"
                 alt="Want to drive a hydrogen EV in the US? Move to California" /></a>
           </div>
-          <div class="card-news-body">
+          <div class="card-body">
             <h4>
               <a href="#">Want to drive a hydrogen EV in the US? Move to California</a>
             </h4>
             <p><a href="#">Matthew Beedham22</a> • minutes ago</p>
           </div>
         </div>
-        <div class="card-news col-md-3 col-lg-4">
-          <div class="card-news-image">
-            <a href="#"><img class="card-news-image-img"
-                src="./img/header-image-bernie-sitting-meme-analysis-516x270.webp"
+        <div class="card">
+          <div class=" card-image">
+            <a href="#"><img src="./img/header-image-bernie-sitting-meme-analysis-516x270.webp"
                 alt="Want to drive a hydrogen EV in the US? Move to California" /></a>
           </div>
-          <div class="card-news-body">
+          <div class="card-body">
             <h4>
               <a href="#">Help kill the ‘Bernie sitting’ meme with this easy-to-use
                 image generator</a>
@@ -136,12 +150,12 @@
             <p><a href="#">Callum Booth3</a> • hours ago</p>
           </div>
         </div>
-        <div class="card-news col-md-3 col-lg-4">
-          <div class="card-news-image">
-            <a href="#"><img class="card-news-image-img" src="./img/1-copy-52-516x270.jpg"
+        <div class=" card  ">
+          <div class=" card-image">
+            <a href="#"><img src="./img/1-copy-52-516x270.jpg"
                 alt="Want to drive a hydrogen EV in the US? Move to California" /></a>
           </div>
-          <div class="card-news-body">
+          <div class=" card-body">
             <h4>
               <a href="#">Uber expands its low-emission ride options to 1,400 more
                 North American cities</a>
@@ -149,25 +163,25 @@
             <p><a href="#">Cities Today5</a> • hours ago</p>
           </div>
         </div>
-        <div class="card-news col-md-3 col-lg-4">
-          <div class="card-news-image">
-            <a href="#"><img class="card-news-image-img" src="./img/zoom-fundraising-gq-516x270.webp"
+        <div class=" card  ">
+          <div class=" card-image">
+            <a href="#"><img src="./img/zoom-fundraising-gq-516x270.webp"
                 alt="Want to drive a hydrogen EV in the US? Move to California" /></a>
           </div>
-          <div class="card-news-body">
+          <div class=" card-body">
             <h4>
               <a href="#">3 reasons why almost every VC investor passed on Zoom</a>
             </h4>
             <p><a href="#">Philip Levinson5</a> • hours ago</p>
           </div>
         </div>
-        <div class="card-news col-md-3 col-lg-4">
-          <div class="card-news-image">
-            <a href="#"><img class="card-news-image-img"
+        <div class=" card  ">
+          <div class=" card-image">
+            <a href="#"><img class=" card-image-img"
                 src="./img/biggst-ev-motor-electric-car-future-diesel-factory-production-future-PSA-world-480x270.webp"
                 alt="Want to drive a hydrogen EV in the US? Move to California" /></a>
           </div>
-          <div class="card-news-body">
+          <div class=" card-body">
             <h4>
               <a href="#">It’s happening! World’s biggest diesel factory pivots to
                 electric motors</a>
@@ -175,12 +189,12 @@
             <p><a href="#">Matthew Beedham6</a> • hours ago</p>
           </div>
         </div>
-        <div class="card-news col-md-3 col-lg-4">
-          <div class="card-news-image">
-            <a href="#"><img class="card-news-image-img" src="./img/1-copy-51-516x270.jpg"
+        <div class=" card  ">
+          <div class=" card-image">
+            <a href="#"><img src="./img/1-copy-51-516x270.jpg"
                 alt="Want to drive a hydrogen EV in the US? Move to California" /></a>
           </div>
-          <div class="card-news-body">
+          <div class=" card-body">
             <h4>
               <a href="#">This nearly inexplicable exoplanet has the density of cotton
                 candy</a>
@@ -188,25 +202,25 @@
             <p><a href="#">The Cosmic Companion6</a> • hours ago</p>
           </div>
         </div>
-        <div class="card-news col-md-3 col-lg-4">
-          <div class="card-news-image">
-            <a href="#"><img class="card-news-image-img"
+        <div class=" card  ">
+          <div class=" card-image">
+            <a href="#"><img class=" card-image-img"
                 src="./img/biden-electric-cars-future-us-state-vehicles-car-EV-480x270.jpg"
                 alt="Want to drive a hydrogen EV in the US? Move to California" /></a>
           </div>
-          <div class="card-news-body">
+          <div class=" card-body">
             <h4>
               <a href="#">The future of US government vehicles is electric</a>
             </h4>
             <p><a href="#">Matthew Beedham7</a> • hours ago</p>
           </div>
         </div>
-        <div class="card-news col-md-3 col-lg-4">
-          <div class="card-news-image">
-            <a href="#"><img class="card-news-image-img" src="./img/Signal-hed-513x270.jpg"
+        <div class=" card  ">
+          <div class=" card-image">
+            <a href="#"><img src="./img/Signal-hed-513x270.jpg"
                 alt="Want to drive a hydrogen EV in the US? Move to California" /></a>
           </div>
-          <div class="card-news-body">
+          <div class=" card-body">
             <h4>
               <a href="#">Signal is drama-free for now, but it should prepare for the
                 worst</a>
@@ -214,18 +228,16 @@
             <p><a href="#">Abhimanyu Ghoshal8</a> • hours ago</p>
           </div>
         </div>
-        <div class="card-news"></div>
+        <div class=" card"></div>
       </div>
     </section>
-    <section class="funding spacer-sm">
-      <div class="funding-header">
-
+    <section class="funding">
+      <div class="section-header">
         <a href="#">
           <h2>Latest funding rounds on Index.co
             <i class="fas fa-chevron-right fa-sm"></i>
           </h2>
         </a>
-
         <ul>
           <li><a href="#">Add info</a></li>
           <li><a href="#">Get updates by email</a></li>
@@ -233,10 +245,10 @@
         </ul>
       </div>
       <div class="columns">
-        <div class="card card-bg">
-          <div class="card-top">
+        <div class="funding-card card-bg">
+          <div class="funding-card-top">
             <div>
-              <div class="card-logo">
+              <div class="funding-card-logo">
                 <img src="./img/ringover.webp" alt="Ringover" />
               </div>
               <h1>Ringover</h1>
@@ -246,23 +258,23 @@
               <p>SERIES A</p>
             </div>
           </div>
-          <div class="card-middle">
+          <div class="funding-card-middle">
             <div><i class="fas fa-tag"></i> Telecomunications</div>
             <div>
               <i class="fas fa-suitcase"></i> Expedition Growth Capital
             </div>
           </div>
-          <div class="card-bottom">
+          <div class="funding-card-bottom">
             <p>
               Ringover raises $12 million to bring enterprise communications
               to the cloud on VentureBeat
             </p>
           </div>
         </div>
-        <div class="card card-bg">
-          <div class="card-top">
+        <div class="funding-card card-bg">
+          <div class="funding-card-top">
             <div>
-              <div class="card-logo">
+              <div class="funding-card-logo">
                 <img src="./img/swissdecode.webp" alt="Ringover" />
               </div>
               <h1>SwissDeCode</h1>
@@ -272,21 +284,21 @@
               <p>VENTURE CAPITAL</p>
             </div>
           </div>
-          <div class="card-middle">
+          <div class="funding-card-middle">
             <div><i class="fas fa-tag"></i> Biotechnology</div>
             <div><i class="fas fa-suitcase"></i> VisVires New Protein</div>
           </div>
-          <div class="card-bottom">
+          <div class="funding-card-bottom">
             <p>
               BREAKING: Food testing startup SwissDeCode nets $4.2m from
               VisVires New Protein, EIT Food on AgFunderNews
             </p>
           </div>
         </div>
-        <div class="card card-bg">
-          <div class="card-top">
+        <div class="funding-card card-bg">
+          <div class="funding-card-top">
             <div>
-              <div class="card-logo">
+              <div class="funding-card-logo">
                 <img src="./img/klook.jpeg" alt="Ringover" />
               </div>
               <h1>SwissDeCode</h1>
@@ -296,21 +308,21 @@
               <p>SERIES E</p>
             </div>
           </div>
-          <div class="card-middle">
+          <div class="funding-card-middle">
             <div><i class="fas fa-tag"></i> Internet</div>
             <div><i class="fas fa-suitcase"></i> Boyu Capital, +4</div>
           </div>
-          <div class="card-bottom">
+          <div class="funding-card-bottom">
             <p>
               SoftBank-backed travel platform Klook raises $200M amid COVID-19
               on TechCrunch
             </p>
           </div>
         </div>
-        <div class="card card-bg">
-          <div class="card-top">
+        <div class="funding-card card-bg">
+          <div class="funding-card-top">
             <div>
-              <div class="card-logo">
+              <div class="funding-card-logo">
                 <img src="./img/wolt.jpeg" alt="Ringover" />
               </div>
               <h1>Wolt</h1>
@@ -320,11 +332,11 @@
               <p>VENTURE CAPITAL</p>
             </div>
           </div>
-          <div class="card-middle">
+          <div class="funding-card-middle">
             <div><i class="fas fa-tag"></i> Mobile, +5</div>
             <div><i class="fas fa-suitcase"></i> DST Global, +9</div>
           </div>
-          <div class="card-bottom">
+          <div class="funding-card-bottom">
             <p>
               Food delivery startup Wolt raises $530M after tripling revenues
               on SiliconANGLE
@@ -335,29 +347,32 @@
     </section>
     <div class="columns">
       <section class="categories">
-        <div class="cat-card">
-          <div class="funding-header">
-            <a href="#">
-              <h2>Hard Fork<i class="fas fa-chevron-right fa-sm"></i></h2>
-            </a>
+        <div class="section-header">
+          <a href="#">
+            <h2>Hard Fork <i class="fas fa-chevron-right fa-sm"></i></h2>
+          </a>
+        </div>
+        <div class="category-card">
+          <div class="category-card-top">
+            <img src="./img/game.jpg" alt="">
+            <div>
+              <p>MOST POPULAR</p>
+              <h3>
+                <a href="#">GameStop stocks hit record high — thanks to Redditors</a>
+              </h3>
+              <p><a href="#">Ivan Mehta 1 day ago</a></p>
+            </div>
           </div>
-          <div class="cat-card-top">
-            <p>MOST POPULAR</p>
-            <h3>
-              <a href="#">GameStop stocks hit record high — thanks to Redditors</a>
-            </h3>
-            <p><a href="#">Ivan Mehta 1 day ago</a></p>
-          </div>
-          <div class="cat-card-mid">
+          <div class="category-card-mid">
             <div>
               <p>LATEST</p>
               <a href="#">Alibaba shares jump 8% as Jack Ma surfaces after 3 months</a>
             </div>
-            <div class="cat-card-img">
-              <img src="./img/alibaba.jpg" alt="" />
+            <div class="category-card-image">
+              <img src="./img/alibaba.jpg" alt="Alibaba" />
             </div>
           </div>
-          <div class="cat-card-bottom">
+          <div class="category-card-action">
             <div class="links">
               <ul>
                 <li>
@@ -390,31 +405,34 @@
         </div>
       </section>
       <section class="categories">
-        <div class="cat-card">
-          <div class="funding-header">
+        <div class="category-card">
+          <div class="section-header">
             <a href="#">
-              <h2>Apps Gear<i class="fas fa-chevron-right fa-sm"></i></h2>
+              <h2>Apps Gear <i class="fas fa-chevron-right fa-sm"></i></h2>
             </a>
           </div>
-          <div class="cat-card-top google-bg-img">
-            <p>MOST POPULAR</p>
-            <h3>
-              <a href="#">Google Maps is adding COVID19 vaccine sites</a>
-            </h3>
-            <p><a href="#"> Napier Lopez17 hours ago</a></p>
+          <div class="category-card-top">
+            <img src="./img/Snag_3c8ecdc-368x276.webp" alt="">
+            <div>
+              <p>MOST POPULAR</p>
+              <h3>
+                <a href="#">Google Maps is adding COVID19 vaccine sites</a>
+              </h3>
+              <p><a href="#"> Napier Lopez17 hours ago</a></p>
+            </div>
           </div>
-          <div class="cat-card-mid">
+          <div class="category-card-mid">
             <div>
               <p>LATEST</p>
               <a href="#">Help kill the ‘Bernie sitting’ meme with this easy-to-use
                 image generator
               </a>
             </div>
-            <div class="cat-card-img">
+            <div class="category-card-image">
               <img src="./img/header-image-bernie-sitting-meme-analysis-516x270.webp" alt="" />
             </div>
           </div>
-          <div class="cat-card-bottom">
+          <div class="category-card-action">
             <div class="links">
               <ul>
                 <li>
@@ -445,31 +463,34 @@
         </div>
       </section>
       <section class="categories">
-        <div class="cat-card">
-          <div class="funding-header">
-            <a href="#">
-              <h2>Gear<i class="fas fa-chevron-right fa-sm"></i></h2>
-            </a>
-          </div>
-          <div class="cat-card-top apple-bg-img">
-            <p>MOST POPULAR</p>
+        <div class="section-header">
+          <a href="#">
+            <h2>Gear <i class="fas fa-chevron-right fa-sm"></i></h2>
+          </a>
+        </div>
+        <div class="category-card">
+          <div class="category-card-top">
+            <img src="./img/MacBook-USB-C-Feat-Img-730x365.jpg" alt="">
+            <div>
+              <p>MOST POPULAR</p>
             <h3>
               <a href="#">Report: Apple may bring MagSafe and SD card slots back to
                 MacBook</a>
             </h3>
             <p><a href="#">Ivan Mehta 1 day ago</a></p>
+            </div>
           </div>
-          <div class="cat-card-mid">
+          <div class="category-card-mid">
             <div>
               <p>LATEST</p>
               <a href="#">Report: Apple to make a plain old VR headset before its fancy
                 AR glasses</a>
             </div>
-            <div class="cat-card-img">
+            <div class="category-card-image">
               <img src="./img/Apple-AR-glasses-headset.jpg" alt="" />
             </div>
           </div>
-          <div class="cat-card-bottom">
+          <div class="category-card-action">
             <div class="links">
               <ul>
                 <li>
@@ -500,23 +521,25 @@
         </div>
       </section>
     </div>
-    <section class="latest spacer-sm spacer-bottom">
-      <div class="funding-header">
-          <a href="#"><h2>Latest deals <i class="fas fa-chevron-right fa-sm"></i></h2></a>
-          <ul class="details">
-            <li><a href="#">See all Details</a></li>
-          </ul>
-        </div>
+    <section class="latest-deals">
+      <div class="section-header">
+        <a href="#">
+          <h2>Latest deals <i class="fas fa-chevron-right fa-sm"></i></h2>
+        </a>
+        <ul class="details">
+          <li><a href="#">See all Details</a></li>
+        </ul>
+      </div>
       <div class="columns">
-        <div class="card-news col-md-3 col-lg-4">
-          <div class="card-news-image large">
-            <a href="#"><img class="card-news-image-img" src="./img/sale_28088_primary_image.jpg"
+        <div class="card large">
+          <div class="card-image">
+            <a href="#"><img src="./img/sale_28088_primary_image.jpg"
                 alt="Want to drive a hydrogen EV in the US? Move to California" /></a>
-            <div class="dealDiscount">
+            <div class=" deal-discount">
               <div>97% OFF</div>
             </div>
           </div>
-          <div class="card-news-body">
+          <div class="card-body">
             <h4>
               <a href="#">Want to drive a hydrogen EV in the US? Move to California</a>
             </h4>
@@ -526,15 +549,15 @@
             </p>
           </div>
         </div>
-        <div class="card-news col-md-3 col-lg-4">
-          <div class="card-news-image large">
-            <a href="#"><img class="card-news-image-img" src="./img/sale_162647_primary_image.jpg"
+        <div class="card large">
+          <div class="card-image">
+            <a href="#"><img src="./img/sale_162647_primary_image.jpg"
                 alt="Want to drive a hydrogen EV in the US? Move to California" /></a>
-            <div class="dealDiscount">
+            <div class=" deal-discount">
               <div>99% OFF</div>
             </div>
           </div>
-          <div class="card-news-body">
+          <div class="card-body">
             <h4>
               <a href="#">The Premium 2021 Project & Quality Management Certification
                 Bundle</a>
@@ -545,15 +568,15 @@
             </p>
           </div>
         </div>
-        <div class="card-news col-md-3 col-lg-4">
-          <div class="card-news-image large">
-            <a href="#"><img class="card-news-image-img" src="./img/sale_24707_primary_image.jpg"
+        <div class="card large">
+          <div class="card-image">
+            <a href="#"><img src="./img/sale_24707_primary_image.jpg"
                 alt="Want to drive a hydrogen EV in the US? Move to California" /></a>
-            <div class="dealDiscount">
+            <div class=" deal-discount">
               <div>99% OFF</div>
             </div>
           </div>
-          <div class="card-news-body">
+          <div class="card-body">
             <h4>
               <a href="#">The Pro Google SEO & SERP Certification Bundle</a>
             </h4>
@@ -563,15 +586,15 @@
             </p>
           </div>
         </div>
-        <div class="card-news col-md-3 col-lg-4">
-          <div class="card-news-image large">
-            <a href="#"><img class="card-news-image-img" src="./img/sale_25748_primary_image.jpg"
+        <div class="card large">
+          <div class="card-image">
+            <a href="#"><img src="./img/sale_25748_primary_image.jpg"
                 alt="Want to drive a hydrogen EV in the US? Move to California" /></a>
-            <div class="dealDiscount">
+            <div class="deal-discount">
               <div>98% OFF</div>
             </div>
           </div>
-          <div class="card-news-body">
+          <div class="card-body">
             <h4>
               <a href="#">The Complete 2021 Microsoft Azure Certification Prep
                 Bundle</a>
@@ -582,15 +605,15 @@
             </p>
           </div>
         </div>
-        <div class="card-news col-md-3 col-lg-4">
-          <div class="card-news-image large">
-            <a href="#"><img class="card-news-image-img" src="./img/sale_162254_primary_image.jpg"
+        <div class="card large">
+          <div class="card-image">
+            <a href="#"><img src="./img/sale_162254_primary_image.jpg"
                 alt="Want to drive a hydrogen EV in the US? Move to California" /></a>
-            <div class="dealDiscount">
+            <div class="deal-discount">
               <div>80% OFF</div>
             </div>
           </div>
-          <div class="card-news-body">
+          <div class="card-body">
             <h4>
               <a href="#">IPVanish VPN: 1-Yr Subscription</a>
             </h4>
@@ -600,15 +623,15 @@
             </p>
           </div>
         </div>
-        <div class="card-news col-md-3 col-lg-4">
-          <div class="card-news-image large">
-            <a href="#"><img class="card-news-image-img" src="./img/sale_18296_primary_image.jpg"
+        <div class="card large">
+          <div class="card-image">
+            <a href="#"><img src="./img/sale_18296_primary_image.jpg"
                 alt="Want to drive a hydrogen EV in the US? Move to California" /></a>
-            <div class="dealDiscount">
+            <div class="deal-discount">
               <div>96% OFF</div>
             </div>
           </div>
-          <div class="card-news-body">
+          <div class="card-body">
             <h4>
               <a href="#">The Ultimate Logic Pro X Music Production Bundle</a>
             </h4>
@@ -618,15 +641,15 @@
             </p>
           </div>
         </div>
-        <div class="card-news col-md-3 col-lg-4">
-          <div class="card-news-image large">
-            <a href="#"><img class="card-news-image-img" src="./img/sale_148067_primary_image.jpg"
+        <div class="card large">
+          <div class="card-image">
+            <a href="#"><img src="./img/sale_148067_primary_image.jpg"
                 alt="Want to drive a hydrogen EV in the US? Move to California" /></a>
-            <div class="dealDiscount">
+            <div class="deal-discount">
               <div>97% OFF</div>
             </div>
           </div>
-          <div class="card-news-body">
+          <div class="card-body">
             <h4>
               <a href="#">The 2021 Complete Microsoft Azure Certification Prep
                 Bundle</a>
@@ -637,15 +660,15 @@
             </p>
           </div>
         </div>
-        <div class="card-news col-md-3 col-lg-4">
-          <div class="card-news-image large">
-            <a href="#"><img class="card-news-image-img" src="./img/sale_162717_primary_image.jpg"
+        <div class="card large">
+          <div class="card-image">
+            <a href="#"><img src="./img/sale_162717_primary_image.jpg"
                 alt="Want to drive a hydrogen EV in the US? Move to California" /></a>
-            <div class="dealDiscount">
+            <div class="deal-discount">
               <div>87% OFF</div>
             </div>
           </div>
-          <div class="card-news-body">
+          <div class="card-body">
             <h4>
               <a href="#">Familio Private Backup Platform: Lifetime Subscription</a>
             </h4>
@@ -655,7 +678,7 @@
             </p>
           </div>
         </div>
-        <div class="card-news"></div>
+        <div class="card large"></div>
       </div>
     </section>
   </main>
@@ -665,25 +688,25 @@
         <div class="wrapper">
           <ul class="footer-links-social">
             <li>
-              <a href="#"><i class="fab fa-facebook fa-lg"></i></a>
+              <a href="#"><i class="fab fa-facebook fa-md"></i></a>
             </li>
             <li>
-              <a href="#"><i class="fab fa-twitter fa-lg"></i></a>
+              <a href="#"><i class="fab fa-twitter fa-md"></i></a>
             </li>
             <li>
-              <a href="#"><i class="fab fa-youtube fa-lg"></i></a>
+              <a href="#"><i class="fab fa-youtube fa-md"></i></a>
             </li>
             <li>
-              <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+              <a href="#"><i class="fab fa-instagram fa-md"></i></a>
             </li>
             <li>
-              <a href="#"><i class="fab fa-pinterest-p fa-lg"></i></a>
+              <a href="#"><i class="fab fa-pinterest-p fa-md"></i></a>
             </li>
             <li>
-              <a href="#"><i class="fas fa-wifi fa-lg"></i></a>
+              <a href="#"><i class="fas fa-wifi fa-md"></i></a>
             </li>
             <li>
-              <a href="#"><i class="fas fa-envelope fa-lg"></i></a>
+              <a href="#"><i class="fas fa-envelope fa-md"></i></a>
             </li>
           </ul>
         </div>

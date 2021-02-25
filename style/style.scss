@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Helvetica", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1192px;
+  padding: 0 20px;
+  margin-top: 110px;
+}
+
+.higlights,
+.banner,
+.content,
+.fitured-side,
+.categories,
+.columns,
+.latest-news,
+.section-header,
+.category-card-top,
+.category-card-image,
+.category-card-mid,
+.funding,
+footer {
+  display: flex;
+}
+
+.h-48 {
+  height: 48% !important;
+}
+
+.card-bg {
+  background-color: #f420110d;
+}
+
+.mb-8 {
+  margin-bottom: 0.7em !important;
+}
+
+.columns {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@import "navigation";
+@import "hightlights";
+@import "funding";
+@import "card";
+@import "categories";
+@import "footer";
