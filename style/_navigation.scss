@@ -1,0 +1,149 @@
+header,
+.top-nav,
+.left-section ul,
+.right-section ul,
+.middle-nav,
+.middle-nav ul,
+.bottom-nav,
+.search {
+  display: flex;
+}
+
+header {
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 10;
+
+  a {
+    color: #aaa;
+  }
+
+  .top-nav {
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+
+    li {
+      font-size: 0.8rem;
+      line-height: 2rem;
+      margin-left: 1.3rem;
+      padding: 0;
+    }
+
+    a {
+      color: #ffffffa2;
+    }
+
+    a:hover {
+      color: #fff;
+    }
+
+    .right-section {
+      margin-right: 1em;
+    }
+
+    @media screen and (max-width: 740px) {
+      display: none;
+    }
+  }
+
+  .middle-nav {
+    justify-content: space-between;
+    background: #fff;
+    min-height: 2.625rem;
+    font: 400 0.8rem/0.8rem Assistant, sans-serif;
+    align-items: center;
+    padding-left: 0.8rem;
+
+    .brand {
+      display: none;
+      background-color: #111;
+      flex: 0 1 auto;
+      padding: 0.75rem;
+      height: 2.625rem;
+
+      img {
+        max-width: 4.125rem;
+      }
+    }
+
+    @media screen and (max-width: 940px) {
+      padding-left: 0;
+
+      ul {
+        display: none;
+      }
+
+      .brand {
+        display: block;
+      }
+    }
+
+    li {
+      font-size: 0.9rem;
+      line-height: 1.3125rem;
+      padding-left: 0.5rem;
+    }
+
+    .search {
+      form input[type="text"] {
+        display: none;
+      }
+
+      .fa-search {
+        color: #aaa;
+        transform: scale(-1, 1);
+        cursor: pointer;
+      }
+
+      .fa-search:hover {
+        color: #535353;
+      }
+
+      .search-btn {
+        height: 2.625rem;
+        width: 2.625rem;
+        border-left: 1px solid #aaa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .bar-btn {
+        outline: none;
+        display: none;
+        height: 2.625rem;
+        width: 2.625rem;
+        padding: 0.9rem 0.8rem 0.8rem;
+        color: #aaa;
+        cursor: pointer;
+
+        @media screen and (max-width: 940px) {
+          display: inline-block;
+          border-left: 1px solid #aaa;
+        }
+      }
+
+      &:active,
+      :focus {
+        color: #535353;
+      }
+    }
+  }
+
+  .bottom-nav {
+    background: #fd3;
+    min-height: 1.5rem;
+    font-size: 0.75rem;
+    padding-left: 1.2rem;
+    align-items: center;
+
+    @media screen and (max-width: 740px) {
+      height: 42px;
+      font-size: 1rem;
+    }
+  }
+}
